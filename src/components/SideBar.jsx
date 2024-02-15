@@ -38,7 +38,7 @@ const SideBar = () => {
         >
           <a href="/" className="">
             <img
-              src="src/assets/logoo.png"
+              src="./images/logoo.png"
               alt="Logo"
               className={`object-cover`}
             />
