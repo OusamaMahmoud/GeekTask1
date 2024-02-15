@@ -38,7 +38,7 @@ const SideBar = () => {
         >
           <a href="/" className="">
             <img
-              src="public/assets/targetLogo.webp"
+              src="src/assets/targetLogo.webp"
               alt="Logo"
               className={` object-cover`}
             />
