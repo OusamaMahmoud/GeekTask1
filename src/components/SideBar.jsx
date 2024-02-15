@@ -22,25 +22,25 @@ const SideBar = () => {
 
   return (
     <div
-      className={`fixed left-2 top-0 h-[825px] bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
+      className={`fixed left-2 top-0 h-[835px] bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
         isExpanded
           ? "w-[180px] flex flex-col justify-between"
-          : "flex flex-col justify-between w-[50px]"
+          : "w-[90px] flex flex-col justify-between "
       }`}
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => setIsExpanded(false)}
     >
       <div className="flex flex-col justify-start items-center">
         <div
-          className={`my-2 transition-all duration-300 ${
-            isExpanded && " w-[250px]"
+          className={`my-10  transition-all duration-300 ml-8 w-[150px] ${
+            isExpanded && " w-[300px]"
           }`}
         >
           <a href="/" className="">
             <img
-              src="public/assets/logo.png"
+              src="public/assets/targetLogo.webp"
               alt="Logo"
-              className="w-[250px] h-[54px] mx-auto mb-4 object-cover"
+              className={` object-cover`}
             />
           </a>
         </div>
