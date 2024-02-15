@@ -25,7 +25,7 @@ const SideBar = () => {
       className={`fixed left-2 top-0 h-[835px] bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
         isExpanded
           ? "w-[180px] flex flex-col justify-between"
-          : "w-[90px] flex flex-col justify-between "
+          : "w-[70px] flex flex-col justify-between "
       }`}
       onMouseEnter={() => setIsExpanded(true)}
       onMouseLeave={() => setIsExpanded(false)}
@@ -97,7 +97,7 @@ const SideBar = () => {
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <div className={` ${isExpanded ? "" : "mb-3"}`}>
-          <FontAwesomeIcon icon={faCircleUser} className="text-[40px] text-accent-color" />
+          <img src="./images/man.png" className="w-[40px]"/>
           </div>
           <div
             className={`ml-4 transition-all duration-300 ${
