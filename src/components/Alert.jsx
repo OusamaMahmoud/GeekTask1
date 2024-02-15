@@ -1,5 +1,11 @@
 import { React, useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFileInvoiceDollar,
+  faMoneyBillTrendUp,
+  faPager,
+  faLayerGroup,
+} from "@fortawesome/free-solid-svg-icons";
 const Alert = ({ risk }) => {
   const [expanded, setExpanded] = useState(false);
 
@@ -10,9 +16,7 @@ const Alert = ({ risk }) => {
     if (risk === "Low Risk") {
       return <span className="text-[#D94111] inline-block ">-0.25 %</span>;
     } else {
-      return (
-        <span className="text-[#118F4B] inline-block ">-0.25 %</span>
-      );
+      return <span className="text-[#118F4B] inline-block ">-0.25 %</span>;
     }
   };
   return (
@@ -29,7 +33,10 @@ const Alert = ({ risk }) => {
             expanded ? "border-white" : "border-[#414040] "
           } min-w-32 flex items-center justify-around`}
         >
-          <img src="src/assets/alertsIcons/one.svg" className="" />
+          <FontAwesomeIcon
+            icon={faFileInvoiceDollar}
+            className="text-white w-[25px] h-[25px] "
+          />
           <span className="text-white inline-block font-normal ">AMZN</span>
         </li>
         <li
@@ -37,7 +44,7 @@ const Alert = ({ risk }) => {
             expanded ? "border-white" : "border-[#414040] "
           } min-w-32 flex items-center justify-around`}
         >
-          <img src="src/assets/alertsIcons/two.svg" className="" />
+          <FontAwesomeIcon icon={faMoneyBillTrendUp} className="text-white w-[25px] h-[25px] " />
           <span className="text-white inline-block  ">200</span>
         </li>
         <li
@@ -45,7 +52,7 @@ const Alert = ({ risk }) => {
             expanded ? "border-white" : "border-[#414040] "
           } min-w-32 flex items-center justify-around`}
         >
-          <img src="src/assets/alertsIcons/three.svg" className="" />
+          <FontAwesomeIcon icon={faPager} className="text-white w-[25px] h-[25px] " />
           {renderRisk()}{" "}
         </li>
         <li
@@ -53,7 +60,11 @@ const Alert = ({ risk }) => {
             expanded ? "border-white" : "border-[#414040] "
           } min-w-32 flex items-center justify-around`}
         >
-          {risk === "High Risk"? <img src="src/assets/alertsIcons/highRisk.svg" className="" /> : <img src="src/assets/alertsIcons/four.svg" className="" /> } 
+          {risk === "High Risk" ? (
+            <FontAwesomeIcon icon={faLayerGroup} className="text-white w-[25px] h-[25px] " />
+          ) : (
+            <FontAwesomeIcon icon={faMoneyBillTrendUp} className="text-white w-[25px] h-[25px] " />
+          )}
           <span className="text-white inline-block ml-4">{risk}</span>
         </li>
       </ul>

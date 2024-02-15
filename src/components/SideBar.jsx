@@ -6,6 +6,7 @@ import {
   faGears,
   faFolderOpen,
   faMoneyBillTrendUp,
+  faCircleUser
 } from "@fortawesome/free-solid-svg-icons";
 
 const SideBar = () => {
@@ -21,7 +22,7 @@ const SideBar = () => {
 
   return (
     <div
-      className={`fixed left-2 top-0 h-full bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
+      className={`fixed left-2 top-0 h-[810px] bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
         isExpanded
           ? "w-[180px] flex flex-col justify-between"
           : "flex flex-col justify-between w-[50px]"
@@ -37,7 +38,7 @@ const SideBar = () => {
         >
           <a href="/" className="">
             <img
-              src="src/assets/street suite logo-04.png"
+              src="src/assets/logo.png"
               alt="Logo"
               className="w-[250px] h-[54px] mx-auto mb-4 object-cover"
             />
@@ -96,7 +97,7 @@ const SideBar = () => {
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <div className={` ${isExpanded ? "" : "mb-3"}`}>
-            <img src={"src/assets/person.svg"} alt="Your SVG" />
+          <FontAwesomeIcon icon={faCircleUser} className="text-[40px] text-accent-color" />
           </div>
           <div
             className={`ml-4 transition-all duration-300 ${
