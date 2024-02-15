@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 const NavBar = () => {
   return (
-    <div className="bg-[#202020] flex justify-around items-center m-3  xl:w-[1100px]">
+    <div className="bg-[#202020] flex justify-around items-center m-3 ">
       <div className="flex justify-center items-center  w-[174px] h-[72px] relative">
         <span className="absolute rounded-md -left-2 top-2 h-3/4 border-l-4 border-blue-500"></span>
         <h1 className="uppercase pb-0.5 text-white text-[45px] font-poppins font-bold relative z-10 leading-[72px]">

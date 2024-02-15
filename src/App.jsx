@@ -5,7 +5,7 @@ import Filters from "./components/Filters";
 function App() {
   return (
     <>
-     <div className="flex max-lg:flex-col lg:w-[1440px] overflow-x-hidden xl:w-[1750px] xl:h-full xl:justify-around mx-4 bg-primary-color max-sm:w-fit h-[835px] max-lg:h-fit ">
+     <div className="flex max-lg:flex-col lg:w-[1450px]  mx-4 bg-primary-color max-sm:w-fit h-[835px] max-lg:h-fit ">
         <div className="mr-20 z-50">
           <SideBar />
         </div>

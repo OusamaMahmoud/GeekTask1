@@ -21,7 +21,7 @@ const SideBar = () => {
 
   return (
     <div
-      className={`relative max-lg:fixed left-2 top-0 h-full bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
+      className={`fixed left-2 top-0 h-full bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
         isExpanded
           ? "w-[180px] flex flex-col justify-between"
           : "flex flex-col justify-between w-[50px]"

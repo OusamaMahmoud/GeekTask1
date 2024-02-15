@@ -16,7 +16,7 @@ const DashboardAlerts = () => {
   ];
 
   return (
-    <ul className="overflow-y-auto bg-[#202020] w-full py-2">
+    <ul className=" bg-[#202020] w-full py-2">
       {riskValues.map((risk, index) => (
         <li className="mb-3" key={index}>
           <Alert risk={risk} />
