@@ -22,7 +22,7 @@ const SideBar = () => {
 
   return (
     <div
-      className={`fixed left-2 top-0 h-[810px] bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
+      className={`fixed left-2 top-0 h-[825px] bg-primary-color rounded-md overflow-hidden transition-all duration-300 ${
         isExpanded
           ? "w-[180px] flex flex-col justify-between"
           : "flex flex-col justify-between w-[50px]"
@@ -38,7 +38,7 @@ const SideBar = () => {
         >
           <a href="/" className="">
             <img
-              src="src/assets/logo.png"
+              src="public/assets/logo.png"
               alt="Logo"
               className="w-[250px] h-[54px] mx-auto mb-4 object-cover"
             />
